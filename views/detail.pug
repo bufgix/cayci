@@ -13,14 +13,14 @@ block content
             br
             h5.many.mb-3 Sipari&scedil; Adedi : 
             .number-input
-            button(onclick="this.parentNode.querySelector('input[type=number]').stepDown()") +
-            input.quantity(min='1' name='quantity' value='1' type='number')
-            button.plus(onclick="this.parentNode.querySelector('input[type=number]').stepUp()") -
+                button(onclick="this.parentNode.querySelector('input[type=number]').stepDown()") 
+                input.quantity(min='1' name='quantity' value='1' type='number')
+                button.plus(onclick="this.parentNode.querySelector('input[type=number]').stepUp()")
             .row.mt-4
-            .col-6
-                h5.price 23.75 &#x20BA;
-            .col-6
-                a(href='')
-                p.myBtn
-                    | Sepete Ekle 
-                    i.fa.fa-shopping-cart(aria-hidden='true')
+                .col-6
+                    h5.price 23.75 &#x20BA;
+                .col-6
+                    a(href='')
+                        p.myBtn
+                            | Sepete Ekle 
+                            i.fa.fa-shopping-cart(aria-hidden='true')
