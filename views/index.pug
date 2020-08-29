@@ -1,5 +1,133 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block slider
+  #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+      li(data-target='#carouselExampleIndicators' data-slide-to='1')
+      li(data-target='#carouselExampleIndicators' data-slide-to='2')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='https://images3.alphacoders.com/106/thumb-1920-1069102.jpg' alt='First slide')
+      .carousel-item
+        img.d-block.w-100(src='https://images3.alphacoders.com/106/thumb-1920-1069102.jpg' alt='Second slide')
+      .carousel-item
+        img.d-block.w-100(src='https://images3.alphacoders.com/106/thumb-1920-1069102.jpg' alt='Third slide')
+    a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only Next
+
+  main.container.my-5
+    .my-3.text.row
+      .col-md-12
+        h2#about Biz Kimiz?
+        hr.line
+        br
+      .col-md-7
+        p
+          | RAVZA &Ccedil;AY markas&imath;n&imath;n hikayesi 1986 y&imath;l&imath;nda Rize ilinin G&uuml;neysu il&ccedil;esinde ba&scedil;lam&imath;&scedil;t&imath;r. Kuruldu&gbreve;u g&uuml;nden bug&uuml;ne ayn&imath; lezzet ve
+          | kalitede de&gbreve;erli t&uuml;keticilere e&scedil;siz damak tad&imath; sunmaya devam etmektedir. &Ccedil;ay&imath;n ba&scedil;kenti Rize&rsquo;mizde bulunan do&gbreve;al &ccedil;ay bah&ccedil;elerinden
+          | toplanmakta olan RAVZA &Ccedil;AY, G&uuml;neysu&rsquo;da bulunan Kaan &Ccedil;ay fabrikam&imath;zda i&scedil;lenmektedir. T&uuml;m &uuml;r&uuml;nlerimiz ISO 9001: Kalite Y&ouml;netim
+          | Sistemi, ISO 22000: G&imath;da G&uuml;venli&gbreve;i Sistemi, ISO 14001: &Ccedil;evre Y&ouml;netim Sistemi, OHSAS 18001: &Idot;&scedil; Sa&gbreve;l&imath;&gbreve;&imath; ve G&uuml;venli&gbreve;i, y&ouml;netim
+          | sistemlerine sahip tesisisimizde, T&uuml;rk G&imath;da Kodeksi Siyah &Ccedil;ay Tebli&gbreve;i&rsquo;ne uygun olarak &uuml;retilmekte ve paketlenmektedir.
+        p
+          | RAVZA &Ccedil;AY ailesi olarak &scedil;irketimizin temel ilkesi m&uuml;&scedil;teri memnuniyetidir. Bu memnuniyetin devam&imath; i&ccedil;in &uuml;retti&gbreve;imiz nat&uuml;rel
+          | siyah T&uuml;rk &ccedil;ay&imath;n&imath;n t&uuml;keticiye sundu&gbreve;u damak tad&imath;, g&uuml;vendi&gbreve;imiz unsurlar&imath;n ba&scedil;&imath;nda gelmektedir.
+      .col-md-5
+        img.img-fluid.firstimage(src='img/ravza.png' alt='')
+      br
+    .row.mb-3
+      .col-md-12
+        h3.text &Uuml;r&uuml;nlerimiz
+        hr.line
+        br
+      .col-md-4
+        .card.shadow.mb-2
+          img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg' alt='Card image cap')
+          .card-body
+            h4.card-title &Ccedil;ay
+            .row
+              .col-lg-4.col-12
+                h5.price 23.75 &#x20BA;
+              .col-lg-2
+              .col-lg-6.col-12.text-center
+                a(href='')
+                  p.myBtn
+                    | Sepete Ekle 
+                    i.fa.fa-shopping-cart(aria-hidden='true')
+      .col-md-4
+        .card.shadow.mb-2
+          img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg' alt='Card image cap')
+          .card-body
+            h4.card-title &Ccedil;ay
+            .row
+              .col-lg-4.col-12
+                h5.price 23.75 &#x20BA;
+              .col-lg-2
+              .col-lg-6.col-12.text-center
+                a(href='')
+                  p.myBtn
+                    | Sepete Ekle 
+                    i.fa.fa-shopping-cart(aria-hidden='true')
+      .col-md-4
+        .card.shadow.mb-2
+          img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg' alt='Card image cap')
+          .card-body
+            h4.card-title &Ccedil;ay
+            .row
+              .col-lg-4.col-12
+                h5.price 23.75 &#x20BA;
+              .col-lg-2
+              .col-lg-6.col-12.text-center
+                a(href='')
+                  p.myBtn
+                    | Sepete Ekle 
+                    i.fa.fa-shopping-cart(aria-hidden='true')
+    .row.mb-3
+      .col-md-4
+        .card.shadow.mb-2
+          img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg' alt='Card image cap')
+          .card-body
+            h4.card-title &Ccedil;ay
+            .row
+              .col-lg-4.col-12
+                h5.price 23.75 &#x20BA;
+              .col-lg-2
+              .col-lg-6.col-12.text-center
+                a(href='')
+                  p.myBtn
+                    | Sepete Ekle 
+                    i.fa.fa-shopping-cart(aria-hidden='true')
+      .col-md-4
+        .card.shadow.mb-2
+          img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg' alt='Card image cap')
+          .card-body
+            h4.card-title &Ccedil;ay
+            .row
+              .col-lg-4.col-12
+                h5.price 23.75 &#x20BA;
+              .col-lg-2
+              .col-lg-6.col-12.text-center
+                a(href='')
+                  p.myBtn
+                    | Sepete Ekle 
+                    i.fa.fa-shopping-cart(aria-hidden='true')
+      .col-md-4
+        .card.shadow.mb-2
+          img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg' alt='Card image cap')
+          .card-body
+            h4.card-title &Ccedil;ay
+            .row
+              .col-lg-4.col-12
+                h5.price 23.75 &#x20BA;
+              .col-lg-2
+              .col-lg-6.col-12.text-center
+                a(href='')
+                  p.myBtn
+                    | Sepete Ekle 
+                    i.fa.fa-shopping-cart(aria-hidden='true')
+
+
