@@ -43,8 +43,8 @@ app.use(
 );
 app.use(
   sassMiddleware({
-    src: path.join(__dirname, "public"),
-    dest: path.join(__dirname, "public", "dist"),
+    src: path.join(__dirname, "public", "stylesheets"),
+    dest: path.join(__dirname, "public", "stylesheets", "dist"),
     indentedSyntax: false,
     sourceMap: true,
   })
