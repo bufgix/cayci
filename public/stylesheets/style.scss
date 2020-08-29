@@ -1,0 +1,195 @@
+.navbar {
+
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+.text {
+  font-family: 'Raleway', sans-serif;
+}
+
+.firstimage {
+  border-radius: 5px;
+}
+
+.line {
+  background-image: linear-gradient(90deg, #397C23, #f5f5f5);
+  border: 0;
+  height: 1px;
+}
+
+.price {
+  background-color: tomato;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.myBtn {
+  background-color: #397C23;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-radius: 50px;
+}
+
+.urun {
+  max-height: 550px;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  display: inline-flex;
+}
+
+.number-input,
+.number-input * {
+  box-sizing: border-box;
+}
+
+.number-input button {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  background-color: #397C23;
+
+}
+
+
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 1rem;
+  height: 2px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+  font-family: sans-serif;
+  max-width: 4.5rem;
+  padding: .5rem;
+  border-width: 0 0px;
+  font-size: 1.75rem;
+  height: 3rem;
+  text-align: center;
+
+}
+
+a.btn-color {
+  background-color: #397C23;
+  color: white;
+  border-radius: 50px;
+}
+
+a.btn-color:hover {
+  background-color: #397C23;
+  color: white;
+}
+
+.footer {
+  background-color: #2D2D2D;
+  color: #fff;
+}
+
+#under {
+  background-color: #242424;
+  color: #ffff;
+}
+
+#name {
+  font-family: "Yellowtail", cursive;
+  font-size: 25px;
+}
+
+#address {
+  font-size: 30px;
+  color: #b81919;
+}
+
+#address:hover {
+  transition: 0.3s;
+  color: #e67e7e;
+}
+
+#mail {
+  font-size: 30px;
+  color: #eec925;
+}
+
+#phone {
+  font-size: 30px;
+  color: #1c9125;
+}
+
+#in {
+  font-size: 30px;
+  color: #0073B0;
+}
+
+#in:hover {
+  color: #94a4c4;
+  transition: 0.3s;
+}
+
+#tw {
+  font-size: 30px;
+  color: #00ACED;
+}
+
+#tw:hover {
+  color: #95d5ed;
+  transition: 0.3s;
+}
+
+#instagram {
+  font-size: 30px;
+  color: #E83741;
+}
+
+#instagram:hover {
+  transition: 0.3s;
+  color: #ed7b82;
+}
+
+
+@media screen and (min-width: 992px) {
+  .carousel-item {
+    max-height: 83vh;
+  }
+}
