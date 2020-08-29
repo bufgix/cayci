@@ -6,6 +6,7 @@ const cookieSession = require("cookie-session");
 var logger = require("morgan");
 var sassMiddleware = require("node-sass-middleware");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
@@ -17,13 +18,10 @@ require("./auth/passport-setup");
 var app = express();
 
 // Prepare DB
-mongoose.connect(
-  "mongodb+srv://bufgix:haktr12345@cluster0.tppqf.mongodb.net/cayci?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect(process.env.DB_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 const DB = mongoose.connection;
 DB.on("error", console.error.bind(console, "connection error:"));
 DB.on("open", console.log.bind(console, "Database connected"));
@@ -39,7 +37,7 @@ app.use(cookieParser());
 app.use(
   cookieSession({
     name: "session",
-    keys: ["bufgix", "printf"],
+    keys: ["bufgix", "printfsimge"],
   })
 );
 app.use(
