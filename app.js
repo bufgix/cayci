@@ -41,12 +41,15 @@ app.use(
     keys: ["bufgix", "printfsimge"],
   })
 );
+
 app.use(
   sassMiddleware({
-    src: path.join(__dirname, "public", "stylesheets"),
-    dest: path.join(__dirname, "public", "stylesheets", "dist"),
+    src: path.join(__dirname, "scss"),
+    dest: path.join(__dirname, "public"),
     indentedSyntax: false,
     sourceMap: true,
+    debug: true,
+    outputStyle: "compressed",
   })
 );
 app.use(express.static(path.join(__dirname, "public")));
