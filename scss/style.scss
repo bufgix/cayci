@@ -25,7 +25,7 @@
 }
 
 .price {
-  background-color: tomato;
+  background-color: rgb(243, 67, 36);
   color: white;
   text-align: center;
   border-radius: 3px;
@@ -47,6 +47,10 @@
   max-height: 550px;
 }
 
+.address{
+  color:#397c23;
+  font-size: 35px;
+}
 input[type="number"] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
@@ -150,18 +154,23 @@ a.btn-color:hover {
   color: #eec925;
 }
 
+#mail:hover{
+  font-size: 30px;
+  color: #f0db7c;
+}
+
 #phone {
   font-size: 30px;
   color: #1c9125;
 }
 
-#in {
+#face {
   font-size: 30px;
-  color: #0073b0;
+  color: #3C5A99;
 }
 
-#in:hover {
-  color: #94a4c4;
+#face:hover {
+  color: #6c8aca;
   transition: 0.3s;
 }
 
