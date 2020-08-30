@@ -48,7 +48,7 @@ app.use(
     dest: path.join(__dirname, "public"),
     indentedSyntax: false,
     sourceMap: true,
-    debug: true,
+    debug: false,
     outputStyle: "compressed",
   })
 );

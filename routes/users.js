@@ -8,7 +8,7 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/sepet", loginRequired, (req, res, next) => {
-  res.send(`Sepet user: ${req.user.name}`);
+  res.render("myCart");
 });
 
 module.exports = router;
