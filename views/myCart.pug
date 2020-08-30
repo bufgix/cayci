@@ -9,7 +9,7 @@ block content
             br
     .row
         .col-md-3
-            img.img-fluid.urun(src='img/beyazcay.jpg' alt='')
+            img.img-fluid.urun(src='/img/beyazcay.jpg' alt='')
         .col-md-6
             h3 Beyaz &Ccedil;ay | 50g
             br
@@ -20,12 +20,12 @@ block content
         .col-md-3
             h5.many.mb-3 Sipari&scedil; Adedi : 
             .number-input
-            button(onclick="this.parentNode.querySelector('input[type=number]').stepDown()")
-            input.quantity(min='1' name='quantity' value='1' type='number')
-            button.plus(onclick="this.parentNode.querySelector('input[type=number]').stepUp()")
+                button(onclick="this.parentNode.querySelector('input[type=number]').stepDown()")
+                input.quantity(min='1' name='quantity' value='1' type='number')
+                button.plus(onclick="this.parentNode.querySelector('input[type=number]').stepUp()")
     .row.mt-4.justify-content-center
         .col-md-4.col-lg-3
-            h5.price  Toplam Tutar:23.75 &#x20BA;
+            h5.price  Toplam Tutar : 23.75 &#x20BA;
         .col-md-4.col-lg-3
             a(href='')
             p.myBtn
