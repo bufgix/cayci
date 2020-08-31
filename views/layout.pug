@@ -20,7 +20,7 @@ html
         button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
           span.navbar-toggler-icon
         #navbarNavDropdown.collapse.navbar-collapse
-          ul.navbar-nav.ml-auto.text-center
+          ul.navbar-nav.ml-auto.text-center.align-items-center
             li.nav-item.mx-1.my-1
               a.nav-link(href='/') Ana Sayfa
             li.nav-item.dropdown.mx-1.my-1
@@ -81,15 +81,15 @@ html
                     a(href='https://www.instagram.com/rizeravzacay/' target='_blank')
                       i#instagram.fab.fa-instagram
               
-                .row.my-2.mt-5
-                  .col-3.text-center
+                .row.my-2.mt-5.align-items-center
+                  .col-md-3.text-center.col-6
                     img.img-fluid.ikon(src="/img/visa.png", alt="")
-                  .col-3.text-center
+                  .col-md-3.text-center.col-6
                     img.img-fluid.ikon(src="/img/masterCard.png", alt="") 
-                  .col-3.text-center
-                    img.img-fluid.ikon(src="/img/ssl.png", alt="")
-                  .col-3.text-center
-                    img.img-fluid.ikon(src="/img/3d.png", alt="")  
+                  .col-md-3.text-center.col-6
+                    img.img-fluid.secure(src="/img/1.png", alt="")
+                  .col-md-3.text-center.col-6
+                    img.img-fluid.secure(src="/img/2.png", alt="")  
 
       #under.row.mx-auto.p-3
         .p.mx-auto.text-center
