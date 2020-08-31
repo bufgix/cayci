@@ -10,6 +10,7 @@ require("dotenv").config();
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+const kurumsalRouter = require("./routes/kurumsal");
 const { authRouter } = require("./auth");
 const productRouter = require("./routes/product");
 
@@ -61,6 +62,7 @@ app.use("/", indexRouter);
 app.use("/user", usersRouter);
 app.use("/auth", authRouter);
 app.use("/product", productRouter);
+app.use("/kurumsal", kurumsalRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
