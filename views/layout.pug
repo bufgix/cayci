@@ -23,6 +23,17 @@ html
           ul.navbar-nav.ml-auto.text-center
             li.nav-item.mx-1.my-1
               a.nav-link(href='/') Ana Sayfa
+            li.nav-item.dropdown.mx-1.my-1
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Hakkımızda
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='#') Biz Kimiz?
+                a.dropdown-item(href='#') Kargo ve Teslimat
+                a.dropdown-item(href='#') Gizlilik Güvenlik
+                a.dropdown-item(href='#') İptal ve İade
+
+            li.nav-item.mx-1.my-1
+              a.nav-link(href='/') Ürünlerimiz
             li.nav-item.mx-1.my-1
               a.nav-link(href='#ftr') &Idot;leti&scedil;im
             li.nav-item.mx-1.my-1
@@ -70,10 +81,8 @@ html
                   a(href='https://www.instagram.com/rizeravzacay/' target='_blank')
                     i#instagram.fab.fa-instagram
       #under.row.mx-auto.p-2
-        .p.mx-auto
-          | &copy; Developed by 
-          a(target='_blank' style='text-decoration: none; color:#fff' href='https://tr.linkedin.com/in/g%C3%BCng%C3%B6r-%C3%B6zt%C3%BCrk-8224a6198?trk=people-guest_profile-result-card_result-card_full-click')
-            span#name.ml-2 G&uuml;ng&ouml;r &Ouml;zt&uuml;rk
+        .p.mx-auto.text-center
+          | ©️ Copyright 2020 RAVZA ÇAY Tüm Hakları Saklıdır.
                   
     script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
     script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous')
